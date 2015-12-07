@@ -17,15 +17,35 @@ html(lang='en', ng-app='polls')
       div(ng-view) -->
 
 <!DOCTYPE html>
-<html>
+<html lang='en', ng-app='polls'>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <link rel="stylesheet" href="">
+  <title>Poll Burn</title>
+  <link rel="stylesheet" href='/stylesheets/style.css'>
+  <link rel="icon" type="image/png" href="http://www.npsmonitoring.com/blog/wp-content/uploads/2013/08/pie-chart-icon-6.png"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.min.js'></script>
 </head>
-<body>
-    <p>hey this works!</p>
+<body ng-controller='PollListCtrl'>
+    <p>hey this doesnt works!</p>
+    <nav class="navbar navbar-inverse">
+      <a class="navbar-brand" href="#/polls">Polls</a>
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Link</a>
+        </li>
+      </ul>
+    </nav>
+<div class="container">
+  <div ng-view>
+
+  </div>
+
+</div>
 
 </body>
 </html>
