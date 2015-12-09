@@ -21,14 +21,18 @@ html(lang='en', ng-app='polls')
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Poll Burn</title>
+  <title>Momma's got Poll Burn</title>
   <link rel="stylesheet" href='/stylesheets/style.css'>
   <link rel="icon" type="image/png" href="http://www.npsmonitoring.com/blog/wp-content/uploads/2013/08/pie-chart-icon-6.png"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script scr="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.7/socket.io.js"></script>
+  <script scr="/javascripts/controllers.js"></script>
+  <script scr="/javascripts/services.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.min.js'></script>
 </head>
-<body ng-controller='PollListCtrl'>
-    <p>hey this doesnt works!</p>
+<body ng-controller="PollListCtrl">
     <nav class="navbar navbar-inverse">
       <a class="navbar-brand" href="#/polls">Polls</a>
       <ul class="nav navbar-nav">
@@ -42,6 +46,7 @@ html(lang='en', ng-app='polls')
     </nav>
 <div class="container">
   <div ng-view>
+    <p>hey this doesnt works!</p>
 
   </div>
 
